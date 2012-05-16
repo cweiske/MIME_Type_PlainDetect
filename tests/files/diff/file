@@ -1,0 +1,24 @@
+--- a/data/config.default.php
++++ b/data/config.default.php
+@@ -45,16 +45,16 @@ $GLOBALS['phorkie']['languages'] = array(
+         'mime'  => 'image/jpeg',
+         'show'  => false
+     ),
+-    'js' => array(
+-        'title' => 'Javascript',
+-        'mime'  => 'application/javascript',
+-        'geshi' => 'javascript'
+-    ),
+     'ini' => array(
+         'title' => 'Ini',
+         'mime'  => 'text/ini',
+         'geshi' => 'ini'
+     ),
++    'js' => array(
++        'title' => 'Javascript',
++        'mime'  => 'application/javascript',
++        'geshi' => 'javascript'
++    ),
+     'php' => array(
+         'title' => 'PHP',
+         'mime'  => 'text/x-php',

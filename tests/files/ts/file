@@ -1,0 +1,34 @@
+config.doctype = xhtml_trans
+
+
+page = PAGE
+page.typeNum = 0
+page.10 = USER
+page.10.userFunc = tx_templavoila_pi1->main_page
+page.10.disableExplosivePreview = 1
+
+
+#special title
+config.noPageTitle = 2
+page.headerData.5 = TEXT
+page.headerData.5.field = title
+page.headerData.5.wrap = <title>|&nbsp; - Neatful &#124; Illustrator &#124; Art Director</title>
+				
+
+#no <div class="csc-default">|</div> around elements
+# for our links
+tt_content.stdWrap.innerWrap>
+
+tt_content.image.20.maxW = 610
+
+
+#remove blur link js and get rid of auto-generated javscript file
+config.removeDefaultJS = 1
+
+#remove default CSS styles and get rid of auto-generated css file
+plugin.tx_felogin_pi1._CSS_DEFAULT_STYLE >
+plugin.tx_indexedsearch._CSS_DEFAULT_STYLE >
+plugin.tt_news._CSS_DEFAULT_STYLE >
+plugin.tx_cssstyledcontent._CSS_DEFAULT_STYLE >
+plugin.tx_cssfilelist._CSS_DEFAULT_STYLE >
+xmlnews.10._CSS_DEFAULT_STYLE >

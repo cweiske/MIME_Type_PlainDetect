@@ -1,0 +1,10 @@
+0       search/2048/c      =font-size:    Cascading Style Sheet text
+!:mime  text/css
+0       search/2048/c      =color:        Cascading Style Sheet text
+!:mime  text/css
+0       search/2048/c      =width:        Cascading Style Sheet text
+!:mime  text/css
+0       string             =---           Difference file text
+!:mime  text/diff
+0       string             =diff          Difference file text
+!:mime  text/diff

@@ -1,0 +1,110 @@
+/* show IDs for anchors */
+a.anchorlink:before {
+    font-size: smaller;
+    content: '_';
+    color: transparent;
+}
+h1[id]:hover a.anchorlink:before,
+h2[id]:hover a.anchorlink:before,
+h3[id]:hover a.anchorlink:before,
+h4[id]:hover a.anchorlink:before,
+h5[id]:hover a.anchorlink:before,
+h6[id]:hover a.anchorlink:before {
+    content: "\00B6";/* pilcrow */
+    color: #888;
+    font-size: smaller;
+}
+a.anchorlink {
+    text-decoration: none;
+    margin-left: 0.5em;
+    font-size: smaller;
+}
+.navbar .brand {
+    /*float: right;*/
+    color: #DDA;
+    text-shadow: 0 0 30px rgba(255, 255, 255, .9);
+}
+.navbar .brand:hover {
+    color: #FFA;
+}
+
+.navbar .container {
+    width: 940px;
+}
+.footer {
+    margin-top: 36px;
+    margin-bottom: 0px;
+    border-top: 1px solid #DDD;
+    color: #999;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 0.5ex;
+}
+
+.repo-info {
+    margin-bottom: 2em;
+}
+.file .header {
+    padding: 1.0ex;
+    margin-bottom: 1em;
+    background-color: whiteSmoke;
+    border: 1px solid #EEE;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.file .header .btn-mini {
+    margin-left: 2px;
+}
+.file .code {
+    margin-left: 2em;
+}
+.file .image {
+    margin-bottom: 2ex;
+}
+
+div.annotations div.alert {
+    margin-bottom: 1ex;
+}
+
+ul.history li {
+    padding-left: 2px;
+    padding-bottom: 1px;
+}
+ul.history li.active {
+    background-color: #EEE;
+    border-radius: 3px;
+}
+ul.history a.hash {
+    font-family: monospace;
+}
+
+
+ul.pager {
+    margin-top: 2ex;
+}
+
+form textarea.content {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+form .allwidth {
+    box-sizing: border-box;
+}
+form .allwidth label {
+    width: 20%;
+    float: left;
+}
+form input#description {
+    box-sizing: border-box;
+    height: 2em;
+    width: 100%;
+}
+
+form label.inline {
+    display: inline;
+}
