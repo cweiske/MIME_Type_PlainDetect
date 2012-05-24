@@ -10,10 +10,10 @@ class DetectionTest extends PHPUnit_Framework_TestCase
     public function getTestFiles()
     {
         $arTestFiles = array();
-        foreach (glob(__DIR__ . '/files/*', GLOB_ONLYDIR) as $dir) {
+        foreach (glob(__DIR__ . '/files/*/file-*') as $file) {
             $arTestFiles[] = array(
-                $dir . '/file',
-                trim(file_get_contents($dir . '/mime-type'))
+                $file,
+                trim(file_get_contents(dirname($file) . '/mime-type'))
             );
         }
         return $arTestFiles;
