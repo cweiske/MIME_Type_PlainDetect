@@ -23,3 +23,13 @@
 !:mime  text/x-sql
 0       search/2048/c      DROP\ DATABSE  SQL text
 !:mime  text/x-sql
+0       search/2048        =\ PAGE\n      TypoScript text
+!:mime  text/x-typoscript
+0       search/2048        =\ USER\n      TypoScript text
+!:mime  text/x-typoscript
+0       search/2048        =\ TEXT\n      TypoScript text
+!:mime  text/x-typoscript
+0       search/2048        =.stdWrap      TypoScript text
+!:mime  text/x-typoscript
+0       search/2048        =stdWrap.      TypoScript text
+!:mime  text/x-typoscript
