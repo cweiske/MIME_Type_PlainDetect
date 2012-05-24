@@ -1,28 +1,37 @@
-0       string             =<?xml         XML text
-5       search/2048/c      =<svg          SVG text
+0       string             =<?xml
+>5      search/2048/c      =<svg          SVG text
 !:mime  image/svg+xml
+0       string             =<?xml         XML text
+!:mime  text/xml
+
 0       search/2048/c      =font-size:    Cascading Style Sheet text
 !:mime  text/css
 0       search/2048/c      =color:        Cascading Style Sheet text
 !:mime  text/css
 0       search/2048/c      =width:        Cascading Style Sheet text
 !:mime  text/css
+
 0       string             =---\          Difference file text
 !:mime  text/diff
 0       string             =diff          Difference file text
 !:mime  text/diff
+
 0       regex/c            =^[a-z]+=[a-z0-9]+  Windows INI configuration text
 !:mime  text/ini
+
 0       regex/c            =\s*\\$\\(     Javascript with jQuery text
 !:mime  application/javascript
+
 0       search/2048        =-------       reStructuredText text
 !:mime  text/x-rst
 0       search/2048        ========       reStructuredText text
 !:mime  text/x-rst
+
 0       search/2048/c      CREATE\ TABLE  SQL text
 !:mime  text/x-sql
 0       search/2048/c      DROP\ DATABSE  SQL text
 !:mime  text/x-sql
+
 0       search/2048        =\ PAGE\n      TypoScript text
 !:mime  text/x-typoscript
 0       search/2048        =\ USER\n      TypoScript text
