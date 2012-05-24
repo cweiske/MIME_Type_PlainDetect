@@ -39,7 +39,9 @@ class DetectionTest extends PHPUnit_Framework_TestCase
         $mt = new MIME_Type();
         $mt->magicFile = __DIR__ . '/../data/programming.magic';
         $mt->useMimeContentType = false;
-        $mt->useFileCmd = false;
+        //fixme: finfo doesn't give the correct results
+        $mt->useFileCmd = true;
+        $mt->useFinfo = false;
         $mt->useExtension = false;
         $type = $mt->autoDetect($file);
 
