@@ -4,7 +4,7 @@ class DetectionTest extends PHPUnit_Framework_TestCase
 {
     public function setUp()
     {
-        require_once 'MIME/Type.php';
+        require_once 'MIME/Type/PlainDetect.php';
     }
 
     public function getTestFiles()
@@ -27,31 +27,11 @@ class DetectionTest extends PHPUnit_Framework_TestCase
         $this->assertNotEmpty($file, 'File is empty');
         $this->assertNotEmpty($expectedType, 'Expected type is empty');
 
-        $type = $this->detectType($file);
+        $type = MIME_Type_PlainDetect::autoDetect($file);
         $this->assertEquals(
             $expectedType, $type,
             'MIME type not detected correctly'
         );
-    }
-
-    public function detectType($file)
-    {
-        $mt = new MIME_Type();
-        $mt->magicFile = __DIR__ . '/../data/programming.magic';
-        $mt->useMimeContentType = false;
-        //fixme: finfo doesn't give the correct results
-        $mt->useFileCmd = true;
-        $mt->useFinfo = false;
-        $mt->useExtension = false;
-        $type = $mt->autoDetect($file);
-
-        if ($type !== 'text/plain') {
-            return $type;
-        }
-
-
-        $type = MIME_Type::autoDetect($file);
-        return $type;
     }
 }
 
