@@ -1,7 +1,13 @@
+0       string             =<?php         PHP text
+!:mime  text/x-php
+
 0       string             =<?xml
 >5      search/2048/c      =<svg          SVG text
 !:mime  image/svg+xml
+
 0       string             =<?xml         XML text
+!:mime  text/xml
+0       regex/c            =^<phpunit  XML text without header
 !:mime  text/xml
 
 0       search/2048/c      =font-size:    Cascading Style Sheet text
