@@ -11,7 +11,7 @@ class MIME_Type_PlainDetect
     public static function autoDetect($file)
     {
         $mt = new MIME_Type();
-        $mt->magicFile = __DIR__ . '/../../../data/programming.magic';
+        $mt->magicFile = static::getMagicFile();
         $mt->useMimeContentType = false;
         //fixme: finfo doesn't give the correct results
         // only fixed in PHP 5.4.4
@@ -27,6 +27,15 @@ class MIME_Type_PlainDetect
 
         $type = MIME_Type::autoDetect($file);
         return $type;
+    }
+
+    public static function getMagicFile()
+    {
+        if ('@data_dir@' != '@' . 'data_dir@') {
+            //PEAR-installed version
+            return '@data_dir@/MIME_Type_PlainDetect/data/programming.magic';
+        }
+        return __DIR__ . '/../../../data/programming.magic';
     }
 }
 
