@@ -1,0 +1,12 @@
+<?php
+//$GLOBALS['phorkie']['cfg']['gitdir']  = '/var/data/phorkie/repos/git/';
+//$GLOBALS['phorkie']['cfg']['workdir'] = '/var/data/phorkie/repos/work/';
+$GLOBALS['phorkie']['cfg']['css'] = 'http://bootstrap.bogo/docs/assets/css/bootstrap.css';
+$GLOBALS['phorkie']['cfg']['debug'] = true;
+$GLOBALS['phorkie']['cfg']['title'] = 'phorkie';
+$GLOBALS['phorkie']['cfg']['setupcheck'] = false;
+//$GLOBALS['phorkie']['cfg']['topbar'] = '<div style="background-color: blue">foo bar baz</div>';
+//$GLOBALS['phorkie']['cfg']['git']['public'] = 'git://bogo/git/';
+//$GLOBALS['phorkie']['cfg']['git']['private'] = 'ssh://git@bogo:';
+$GLOBALS['phorkie']['cfg']['elasticsearch'] = 'http://localhost:9200/phorkie/';
+?>
