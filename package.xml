@@ -9,7 +9,7 @@
   http://pear.php.net/dtd/package-2.0.xsd"
 >
  <name>MIME_Type_PlainDetect</name>
- <channel>pear.php.net</channel>
+ <channel>zustellzentrum.cweiske.de</channel>
  <summary>Detect the MIME type of source code files</summary>
  <description>
   Detect the MIME type of source code files
@@ -18,7 +18,7 @@
  <lead>
   <name>Christian Weiske</name>
   <user>cweiske</user>
-  <email>cweiske@php.net</email>
+  <email>cweiske@cweiske.de</email>
   <active>yes</active>
  </lead>
 
