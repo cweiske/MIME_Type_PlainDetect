@@ -1,0 +1,28 @@
+{
+    "name": "cweiske/mime_type_plaindetect",
+    "description": "Detect MIME type of text files by their content",
+    "license": "LGPL-3.0+",
+    "homepage": "http://git.cweiske.de/MIME_Type_PlainDetect.git/",
+    "authors": [
+        {
+            "name": "Christian Weiske",
+            "email": "cweiske@cweiske.de",
+            "homepage": "http://cweiske.de/"
+        }
+    ],
+    "support": {
+        "email": "cweiske@cweiske.de"
+    },
+    "autoload": {
+        "psr-0": {"": "src/"}
+    },
+    "repositories": [
+        {
+            "type": "pear",
+            "url": "pear.php.net"
+        }
+    ],
+    "require": {
+        "pear-pear.php.net/MIME_Type": "~1.3"
+    }
+}
