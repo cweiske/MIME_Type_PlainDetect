@@ -11,6 +11,8 @@
         }
     ],
     "support": {
+        "source": "https://github.com/cweiske/MIME_Type_PlainDetect",
+        "issues": "https://github.com/cweiske/MIME_Type_PlainDetect/issues",
         "email": "cweiske@cweiske.de"
     },
     "autoload": {
