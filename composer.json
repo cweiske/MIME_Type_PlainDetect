@@ -16,13 +16,7 @@
     "autoload": {
         "psr-0": {"": "src/"}
     },
-    "repositories": [
-        {
-            "type": "pear",
-            "url": "pear.php.net"
-        }
-    ],
     "require": {
-        "pear-pear.php.net/MIME_Type": "~1.3"
+        "pear/mime_type": "~1.3"
     }
 }
